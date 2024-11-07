@@ -123,12 +123,12 @@ def backtest_portfolio(data, weights, benchmark_tickers, start_date, end_date, i
     for ticker in benchmark_tickers:
         try:
             benchmark_data = yf.download(ticker, start=start_date, end=end_date)['Adj Close']
-            if benchmark_data.empty:
-                st.warning(f"No data for benchmark {ticker}")
+            if benchmark_data.empty or benchmark_data.isnull().all():
+                st.warning(f"No valid data for benchmark {ticker}")
                 continue
             benchmark_returns = benchmark_data.pct_change(fill_method=None).dropna()
             if benchmark_returns.empty:
-                st.warning(f"No valid data for benchmark {ticker}")
+                st.warning(f"No valid returns data for benchmark {ticker}")
                 continue
             benchmark_growth = (1 + benchmark_returns).cumprod() * initial_capital
             sharpe_b, sortino_b = calculate_sharpe_sortino(benchmark_returns)
