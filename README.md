@@ -24,8 +24,8 @@ pip install -r requirements.txt
 2. Run the scripts using your preferred Python environment:
 
 ```bash
-python Fin7_5.py
-python Fin4.py
+streamlit run Fin7_5.py
+streamlit run Fin4.py
 ```
 
 ## Dependencies
