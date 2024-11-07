@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+plotly
+streamlit
+yfinance
+pypfopt>=1.5,<2.0  # Ensure compatibility with Python 3.8+
