@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Scripts
 
-### Fin7_5.py
+### Fin7_5_1.py
 **The script focus on portfolio optimization using financial data.**.
 
 ### Fin4.py
