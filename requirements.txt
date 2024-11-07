@@ -5,3 +5,4 @@ yfinance
 numpy
 plotly
 PyPortfolioOpt
+scikit-learn
