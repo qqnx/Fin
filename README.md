@@ -13,10 +13,10 @@ pip install -r requirements.txt
 ## Scripts
 
 ### Fin7_5.py
-This script focuses on **The script seems to focus on portfolio optimization using financial data.**.
+**The script focus on portfolio optimization using financial data.**.
 
 ### Fin4.py
-This script provides functionalities for **The script provides various financial analysis tools, focusing on data visualization and interactive data exploration.**.
+**The script provides various financial analysis tools, focusing on data visualization and interactive data exploration.**.
 
 ## Usage
 
