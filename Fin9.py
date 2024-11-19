@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def download_data(etf_list, start, end):
-    """Download ETF data from Yahoo Finance with error handling."""
+    """Download Assets data from Yahoo Finance with error handling."""
     try:
         if isinstance(etf_list, str):
             etf_list = [etf_list]
